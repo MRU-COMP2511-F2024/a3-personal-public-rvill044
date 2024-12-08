@@ -7,7 +7,7 @@ html {
 body {
     display: grid;
     grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
     grid-gap: 10px;
 }
 
@@ -66,6 +66,13 @@ nav {
     padding-left: 10px;
     width: 100%;
     object-fit: contain;
+}
+.a3NavGrid{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 /* END OF NAV CSS */
 
@@ -189,6 +196,9 @@ footer {
 /* MEDIA */
 
 @media (max-width: 590px) {
+    .a3NavGrid{
+        display: none;
+    }
     .content {
         grid-template-columns: 1fr;
     }
