@@ -264,15 +264,76 @@
                     </a>
                     <figcaption>COMP 1502 Assignment 2 Objectives</figcaption>
                 </figure>
+                <p>
+                    The technical requirements of assignment 2 was reading a text file with toy specifications, putting
+                    them into 4 unique objects, then adding them all into one object arraylist to be purchased or
+                    removed. As the assignment specifictions said that we were writing code for a toy store. <br><br>
+                    My role in this assignment was the loading content from the text file and saving from the object
+                    arraylist back into a textfile.
+                </p>
+                <figure>
+                    <a href="images/1502a2func1.png">
+                        <img class="gpuImg" src="images/1502a2func1.png" alt="1502a2func1">
+                    </a>
+                    <figcaption>Showcase of loading code</figcaption>
+                </figure>
+                <p>
+                    I loaded the text file, then I delimited it by using the split function, then I called the function
+                    ToyConstructor() to organize the toys from the textfile into an object arraylist. I created another
+                    function call to avoid bloating the current function, and to make it easier to read whenever an
+                    error occurs.
+                </p>
+                <figure>
+                    <a href="images/1502a2func2.png">
+                        <img class="gpuImg" src="images/1502a2func2.png" alt="1502a2func2">
+                    </a>
+                    <figcaption>ToyConstructor() with one Object</figcaption>
+                </figure>
+                <p>
+                    Then once the ToyConstructor() was called, it created the specifc toy object and then loaded it into
+                    the object array called "rows".
+                </p>
                 <h3>
                     Design
                 </h3>
+                <p>
+                    I'm happy with the overall design of the functions I created. As I tried my best to make sure the
+                    code is readable but also is easy to come back to in the future.
+                </p>
                 <h3>
                     Challenges
                 </h3>
+                <p>
+                    The biggest challenge on my part of assignment 2 was saving to a text file. Intially, I thought I
+                    could simply pull specifc variables from the object array then load them into the text file. It
+                    didn't work which caused me some frustration, however, what I failed to realize is that in an object
+                    array, it only contains objects, therefore me trying to pull specific variables wouldn't work.
+                </p>
+                <figure>
+                    <a href="images/1502a2bad.png">
+                        <img class="gpuImg" src="images/1502a2bad.png" alt="1502a2bad">
+                    </a>
+                    <figcaption>My first implmentation of the save function</figcaption>
+                </figure>
+                <p>
+                    What I realized is that I completely overcomplicated my code and instead of trying to rewrite the
+                    textfile based on specific variables, I can simply print out the object array back into the
+                    arraylist.
+                </p>
+                <figure>
+                    <a href="images/1502a2good.png">
+                        <img class="gpuImg" src="images/1502a2good.png" alt="1502a2good">
+                    </a>
+                    <figcaption>My first implmentation of the save function</figcaption>
+                </figure>
                 <h3>
                     What Could be Improved
                 </h3>
+                <p>
+                    What could be improved is me further understanding how objects interact in arrays, object arrays,
+                    and so one. Furthermore, taking the time to understand and design functions before jumping in and
+                    code without thinking.
+                </p>
             </section>
 
         </div>
