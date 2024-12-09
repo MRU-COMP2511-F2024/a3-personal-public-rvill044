@@ -109,6 +109,11 @@ header p{
     padding-right: 5px;
 }
 
+header a:link {
+    color: #CDD1C4;
+    text-decoration: none;
+}
+
 /* END OF HEADER CSS */
 footer {
     background-color: #CDD1C4;
@@ -162,45 +167,51 @@ video {
 
 /* END OF CONTENT CSS */
 /* START OF CONTACT FORM */
-.contactForm h2 {
-    background-color: #CDD1C4;
-    color: #4D5061;
-    text-align: center;
-    margin-left: 15px;
-    margin-right: 5px;
-}
-
-.contactForm dt {
-    color: #CDD1C4;
-}
-
 .contactForm {
     background-color: #4D5061;
-    grid-column: 2/4;
+    grid-column: 1 / -1; 
     text-align: left;
-    padding-right: 10px;
-    max-height: 300px;
-    grid-template-rows: auto;
+    padding: 20px;
+    max-height: none; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
 }
 
 #contact {
-    width: 100%;
+    width: 100%; 
+    margin: 0; 
 }
 
-#contact textarea {
-    width: 100%;
-    max-width: 100%;
-}
-
-#submitBtn {
-    display: block;
-    margin-left: auto;
-    margin-top: 10px;
-    max-width: 645px;
+#contact dl {
+    margin: 0; 
 }
 
 #contact dt {
-    padding-left: 40px;
+    padding-left: 0; 
+    color: #CDD1C4;
+}
+
+#contact dd {
+    margin: 0; 
+}
+
+#contact input, 
+#contact textarea {
+    width: 100%; 
+    margin-bottom: 10px; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+}
+
+#contact input[type="submit"],
+#contact input[type="reset"] {
+    max-width: 150px; 
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 /* END OF CONTENT FORM */
