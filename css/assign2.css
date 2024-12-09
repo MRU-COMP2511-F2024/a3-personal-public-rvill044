@@ -24,6 +24,11 @@ h2 {
     color: #CDD1C4;
 }
 
+h3 a{
+    color: #CDD1C4;
+    text-decoration: none;
+}
+
 /* START OF NAV CSS */
 nav {
     background-color: #CDD1C4;
