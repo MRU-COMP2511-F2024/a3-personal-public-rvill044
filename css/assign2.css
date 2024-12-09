@@ -130,6 +130,10 @@ footer {
     width: 75%;
 }
 
+video {
+    width: 100%;
+}
+
 #sectionOne,
 #sectionTwo,
 #sectionThree,
