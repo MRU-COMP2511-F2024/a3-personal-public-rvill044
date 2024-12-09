@@ -42,6 +42,18 @@ nav {
     grid-column: 1;
 }
 
+
+.menuLinkActive{
+    background-color: #4D5061;
+    color: #CDD1C4;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+.menuLinkActive a{
+    text-decoration: none;
+    color: beige;
+}
 .menuLink {
     background-color: beige;
     color: #CDD1C4;
@@ -74,6 +86,8 @@ nav {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+
 /* END OF NAV CSS */
 
 /* START OF HEADER CSS */
@@ -106,7 +120,7 @@ footer {
 .content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr 0.8fr;
+    /* grid-template-rows: 1fr 1fr 0.8fr; */
     text-align: center;
     grid-gap: 10px;
 }
